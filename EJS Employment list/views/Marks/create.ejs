@@ -1,0 +1,38 @@
+<%- include('../partials/header') -%>
+    <%- include('../partials/navbar') -%>
+        <div class="bg-image">
+      <p class="page-heading">Company Management System</p>
+            <div class="center-container">
+                <div class="form-container">
+                    <h1 class="display-4 text-center text-success">Calculate Employee work</h1>
+                    <hr>
+
+                    <%- include('../partials/flashMessages') -%>
+                        <form action="/Marks/create" method="post">
+                            <div class="form-group">
+                                <label for="emplname">Employee Name:</label>
+                                <input type="string" name="emplname" id="emplname">
+                            </div>
+                            <div class="form-group">
+                                <label for="compname">Company Name:</label>
+                                <input type="text" name="compname" id="compname">
+                            </div>
+                            <div class="form-group">
+                                <label for="dayhours">Employee work hour's day:</label>
+                                <input min="0" max="24" type="number" name="dayhours" id="dayhours">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="weekhours">Employee work hour's week:</label>
+                                <input min="0" max="24" type="number" name="weekhours" id="weekhours">
+                            </div>
+                            <div class="form-group">
+                                <button type="submit">Submit</button>
+                            </div>
+                        </form>
+                </div>
+            </div>
+        </div>
+
+
+        <%- include('../partials/footer') -%>

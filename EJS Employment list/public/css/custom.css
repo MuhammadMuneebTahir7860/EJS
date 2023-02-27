@@ -1,0 +1,91 @@
+.nav-bar-heading{
+    color: white;
+}
+.nav-link{
+    color: gray;
+    margin-left: 20px;
+}
+.bg-image{
+    background-image: url('/assets/background.jpg');
+    min-height: 100vh;
+    width: 100%;
+    background-position:center;
+    background-size: cover;
+}
+.home-page{
+    width: 100%;
+    height: 500px
+}
+.page-heading{
+    text-align: right;
+    margin-right: 100px;
+}
+.center-container{
+    width: 100%;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+.form-container{
+    background-color: white;
+    padding: 45px;
+    width: 80%;
+    border-radius: 10px;
+}
+
+/* Style for the table */
+table {
+    border-collapse: collapse;
+    width: 100%;
+    margin-top: 20px;
+  }
+  
+  th, td {
+    text-align: left;
+    padding: 8px;
+  }
+  
+  th {
+    background-color: #ddd;
+  }
+  
+  tr:nth-child(even) {
+    background-color: #f2f2f2;
+  }
+  
+  /* Style for the action buttons */
+  td a {
+    display: inline-block;
+    margin-right: 10px;
+    padding: 6px 10px;
+    background-color: #4CAF50;
+    color: white;
+    border-radius: 3px;
+    text-decoration: none;
+  }
+  
+  td a:hover {
+    background-color: #3e8e41;
+  }
+  
+  td a:last-child {
+    margin-right: 0;
+  }
+  
+  td a.edit {
+    background-color: #2196F3;
+  }
+  
+  td a.edit:hover {
+    background-color: #0b7dda;
+  }
+  
+  td a.delete {
+    background-color: #f44336;
+  }
+  
+  td a.delete:hover {
+    background-color: #da190b;
+  }
+  

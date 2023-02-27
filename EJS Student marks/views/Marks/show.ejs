@@ -1,0 +1,35 @@
+
+<%- include('../partials/header.ejs') -%>
+<%- include('../partials/navbar.ejs') -%>
+<div class="container">
+<div class="row mt-4">
+        
+    <div class="col-md-9 offset-md-1">
+        <div class="card">
+                    
+            <div class="card-body">
+                <h5 class="card-title">Student Name: <%=event.stdname %></h5>
+                <hr>
+                <p class="card-text">Student Id: <%=event.stdid%></p>
+                <p>Quiz 1: <%=event.Quiz1%></p>
+                <p>Quiz2: <%=event.Quiz2%></p>
+                <p>Med Exam: <%=event.MedExam%></p>
+                <p>Final Exam: <%=event.FinalExam%></p>
+                <p>Total: <%=event.Total%></p>
+                <p>Grade: <%=event.Grade%></p>
+
+                
+                
+                    <a href="<%= '/Marks/edit/' + event.id %>" class="btn btn-primary">Edit</a>
+                    <button class="btn btn-danger" onclick="deleteEvent()" id="deleteBtn" data-id="<%= event.id%>">Delete</button>
+              
+            </div>
+        </div>
+        
+    </div>
+
+</div>
+
+</div>
+
+<%- include('../partials/footer.ejs') -%>

@@ -1,0 +1,47 @@
+<%- include('../partials/header') -%>
+<%- include('../partials/navbar') -%>
+<div class="container">
+    <div class="row mt-4">
+        <div class="col-md-9 offset-md-3">
+            <h1 class="display-4">Add New Mark:</h1>
+            <hr>
+       
+            <%- include('../partials/flashMessages') -%>      
+            <form  action="/Marks/create" method="post">
+                <div class="form-group">
+                    <label for="stdname">Student Name</label>
+                    <input type="string" name="stdname" id="stdname" value="Ahmed"  class="form-control">
+                </div>
+                <div class="form-group">
+                    <label for="stdid">Student Id</label>
+                    <input type="number" name="stdid" id="stdid" value="111"  class="form-control">
+                </div>
+                <div class="form-group">
+                    <label for="Quiz1">Quiz1</label>
+                    <input type="number" name="Quiz1" id="Quiz1" value="7"  class="form-control">
+                </div>
+
+                <div class="form-group">
+                        <label for="Quiz2">Quiz2</label>
+                        <input type="number" name="Quiz2" id="Quiz2" value="5" class="form-control">
+                    </div>
+
+                    <div class="form-group">
+                            <label for="MedExam:">Med Exam </label>
+                            <input type="number" name="MedExam" id="MedExam" value="15" class="form-control">
+                        </div>
+
+                        <div class="form-group">
+                                <label for="FinalExam">Final Exam</label>
+                                <input type="number" name="FinalExam" id="FinalExam" value="35" class="form-control">
+                            </div>
+                    <div class="form-group">
+                        <button type="submit" class="btn btn-primary"> Create</button>
+                    </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+    
+<%- include('../partials/footer') -%>

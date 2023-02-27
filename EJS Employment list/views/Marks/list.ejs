@@ -1,0 +1,54 @@
+<%- include('../partials/header.ejs') -%>
+    <%- include('../partials/navbar.ejs') -%>
+        <div class="bg-image">
+            <p class="page-heading">Company Management System</p>
+            <div class="center-container">
+                <div class="form-container">
+                    <h3 class="text-center">Employees List</h3>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Key</th>
+                                <th>Employee Name</th>
+                                <th>Company Name</th>
+                                <th>Hours/Day</th>
+                                <th>Hours/Week</th>
+                                <th>Salary</th>
+                                <th>Actions</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <% for (var i=0; i < employees.length; i++) { %>
+                                <tr>
+                                    <td>
+                                        <%= employees[i+1] %>
+                                    </td>
+                                    <td>
+                                        <%= employees[i].emplname %>
+                                    </td>
+                                    <td>
+                                        <%= employees[i].compname %>
+                                    </td>
+                                    <td>
+                                        <%= employees[i].dayhours %>
+                                    </td>
+                                    <td>
+                                        <%= employees[i].weekhours %>
+                                    </td>
+                                    <td>
+                                        <%= employees[i].sallary %>
+                                    </td>
+                                    <td>
+                                        <a href="/edit/<%= employees[i]._id %>">Edit</a>
+                                        <a href="/delete/<%= employees[i]._id %>">Delete</a>
+                                    </td>
+                                </tr>
+                                <% } %>
+                        </tbody>
+                    </table>
+
+                </div>
+
+            </div>
+
+        </div>
